@@ -1,0 +1,484 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+      
+    <title>Minse's Little Kitchen World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gochi+Hand|Great+Vibes|Homemade+Apple|Indie+Flower|Marck+Script|Merienda|Miss+Fajardose|Pacifico|Parisienne|Shadows+Into+Light|Indie+Flower&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+        body {
+                
+                margin-top: -4%;
+                margin-left: 0px;
+                margin-right: 0px;
+                
+        }
+    
+        .header{
+            
+                width: 100%;
+                height: 300px;
+                background-color: bisque;
+
+        }
+        
+        
+        #title {
+            
+                color: red;
+                width: 30%;
+                height: 300px;
+                background-color: bisque;
+                position: absolute;
+                left: 40%;
+                
+        }
+        
+        #title h1 {
+            
+                font-family: 'Parisienne', cursive;
+                color: darkseagreen;
+                padding: 5px 5px 5px 5px;
+                font-size: 80px;
+                
+        }
+        
+        #title h2 {
+            
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 40px;
+                color:chocolate;
+                width: 100%;
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                
+        }
+        
+        
+        #pizza {
+            
+                    width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    top: 75px;
+                    left: 26%;
+        }
+        
+        #cookies {
+            
+                    position: absolute;
+                    top: 15px;
+                    left: 13.5%;
+        }
+        
+        #plate {
+            
+                    position: absolute;
+                    left: 35%;
+                    top: 145px;
+                    z-index: 1;
+                        
+        }
+        
+        #cake {
+            
+                    position: absolute;
+                    left: 69%;
+                    top: 10px;
+        }
+        
+        #cupcake {
+            
+                    position: absolute; 
+                    left: 84%;
+                    top: -10px;
+        }
+        
+        #drink {
+            
+                    width: 180px;
+                    height: 250px;
+                    position: absolute;
+                    top: -4px;
+                    left: 0.6%;
+        }
+        
+        #insta  {
+            
+                    position: absolute;
+                    top: 240px;
+                    left: 51%;
+        }
+        
+        #fb {
+            
+                    position: absolute;
+                    top: 232px;
+                    left: 66%;
+        }
+        
+        #pinterest {
+            
+                    position: absolute;
+                    top: 233px;
+                    left: 83%;
+        }
+        
+        #weheartit {
+            
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 240px;
+                    left: 100%;
+        }
+        
+        .menubar {
+            
+                    width: 100%;
+                    height: 115px;
+                    background-color: gainsboro;
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 245px;
+                    font-family: 'Shadows Into Light', cursive;
+        }
+        
+        #sidebar {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0px;
+                    left: 0px;
+                    background-color:bisque;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 75px;
+                    opacity: 1;
+                    
+        }
+        
+        #sidebar a {
+            
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:cadetblue;
+                    display: block;
+                    transition: 0.3s;
+                    border-bottom: 1px solid white;
+        }
+        
+        
+        #sidebar a:hover {
+            
+                    color:darkred;
+        
+        }
+        
+        
+        
+        #sidebar .closebtn {
+            
+                    position: absolute;
+                    top: 0px;
+                    right: 25px;
+                    font-size: 25px;
+                    margin-left: 50px;
+                    border-bottom: 0px;
+                    
+        }
+        
+        
+        .openbtn {
+            
+                    font-size: 15px;
+                    cursor: pointer;
+                    background-color: #111;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    position: absolute;
+                    top: 42px;
+                    left: 30px;
+            
+        }
+        
+        
+        .openbtn:hover {
+            
+                    background-color: #444;
+        }
+        
+        #today {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 25px;
+                            left: 55%;
+                            font-size: 24px;
+                            padding: 15px 15px 15px 15px;
+                            border-right: 1px solid white;
+                            
+        }
+        
+        #lazy {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 25px;
+                            left: 68.5%;
+                            font-size: 24px;
+                            padding: 15px 20px 15px 20px;
+                            border-right: 1px solid white;
+        }
+        
+        #guests {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 25px;
+                            left: 84%;
+                            font-size: 24px;
+                            padding: 15px 15px 15px 15px;
+                            border-right:0px;
+        }
+        
+        #today:hover, #lazy:hover, #guests:hover {
+            
+                            color:forestgreen;
+        }
+        
+        .menubar input[type=text] {
+            
+                            padding: 6px;
+                            border: 2px solid darksalmon;
+                            margin-top: 8px;
+                            margin-right: 0px;
+                            font-size: 17px;
+                            width: 250px;
+                            height: 40px;
+        }
+        
+        .menubar .search-container {
+            
+                            position: absolute;
+                            top: 35px;
+                            left: 120px;
+                            
+        }
+        
+        .menubar .search-container button {
+            
+                            float: right;
+                            padding: 6px 10px;
+                            margin-top: 8px;
+                            margin-right: 16px;
+                            font-size: 17px;
+                            cursor: pointer;
+                            height: 40px;
+                            width: 40px;
+                            position: absolute;
+                            top: 0px;
+                            background-color: darkgray;
+                            border:1px solid darksalmon;
+        }
+        
+        * {box-sizing: border-box;}
+        
+        
+        .main {
+            
+                width: 100%;
+                height: 2000px;
+                position: absolute;
+                top: 350px;
+                left: 0px;
+                background-image: url("babyblue.jpg");
+                background-size: cover;
+        }
+        
+        
+         #overlay {
+            
+                    position: absolute;
+                    left: 8%;
+                    top: 10%;
+                    width: 80%;
+                    height: 80%;
+                    background-color: rgba(225, 225, 225, 0.5);
+                    margin-bottom: 5%;
+                    padding-bottom: 5%;
+        }
+        
+        
+        .main img {
+            
+                    position: absolute;
+                    top: 1%;
+                    left: 54%;
+        }
+        
+        
+        #milkshake {
+            
+                    width: 400px;
+                    height: 400px;
+                    position: absolute;
+                    top: 17%;
+                    left: 51%;
+                    border: 5px solid cadetblue; 
+                    border-radius: 10px;
+        }
+        
+        .main h1 {
+            
+                    font-family:'Shadows Into Light', cursive;
+                    font-size: 45px;
+                    font-weight: bold;
+                    color:darksalmon;
+                    text-align:left;
+                    align-content: center;
+                    margin: 20px 5px 5px 20px;
+                    padding: 20px 5px 5px 20px;
+        }
+        
+        .main h2 {
+            
+                    font-family:'Shadows Into Light', cursive;
+                    font-size: 26px;
+                    font-weight: bold;
+                    color: darksalmon;
+                    text-align:left;
+                    align-content: center;
+                    margin: 20px 5px 5px 20px;
+                    padding: 20px 5px 5px 20px;
+        }
+        
+        
+        .main p {
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 20px 10px 10px 20px;
+                    padding: 20px 10px 10px 20px;
+                    color: black;
+        }
+        
+        
+        .main ul {
+            
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 20px 10px 10px 40px;
+                    padding: 20px 10px 10px 40px;
+                    color: black;
+        }
+
+        
+        
+          </style>
+    
+    
+</head>
+    
+<body>
+    <div class="header">
+        
+            <div id="title">
+                <h1>Minse's</h1>
+                <h2>Little Kitchen World</h2>
+                <a href="https://www.instagram.com/spirit.indestructible/?hl=hr" target="_blank"><img id="insta" src="instagram.png"></a>
+                <a href="https://www.facebook.com/eminafajits" target="_blank"><img id="fb" src="kissclipart-%E0%B9%80%E0%B8%9F%E0%B8%AA-png-clipart-facebook-computer-icons-desk-b50693e5d095b36b.png"></a>
+                <a href="https://www.pinterest.com/eminafaji/" target="_blank"><img id="pinterest" src="%E2%80%94Pngtree%E2%80%94pinterest%20logo%20icon_3570312.png"></a>
+                <a href="https://weheartit.com/spirit_indestructible" target="_blank"><img id="weheartit" src="we-heart-it-pngrepo-com.png"></a>
+            </div>
+        <img id="drink" src="drinks-drawing-transparent-transparent.png">
+        <img id="pizza" src="food-clipart-pizza-5.png">
+        <img id="cookies" src="clipartwiki.com-christmas-cookies-clipart-39731.png">
+        <img id="plate" src="western-food-cartoon-png-chicken-salad-clipart-a6d28ec47ad04378.png">
+        <img id="cake" src="cake-clipart-transparent-4.png">
+        <img id="cake" src="cake-clipart-transparent-4.png">
+        <img id="cupcake" src="kisspng-cupcake-cakes-clip-art-portable-network-graphics-vector-cupcakes-dessert-transparent-amp-png-clip-5cb738292ec6f1.4542767115555113371916.png">
+        
+        <div class="menubar">
+                
+                <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="search-container">
+                <input type="text" placeholder="Search ..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+                <a id="today" href="../Project1/OnToday'sMenu.html">On Today's Menu</a>
+                <a id="lazy" href="">Hungry but Lazy</a>
+                <a id="guests" href="">Guests are coming</a>
+    
+        </div>
+        
+        <div id="sidebar" class="menubar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <a href="../Project1/About.html">About</a>
+            <a href="../Project1/Soups.html">Soups</a>
+            <a href="../Project1/Pies%20and%20Pastries.html">Pies and Pastries</a>
+            <a href="../Project1/SaladsAndSideDishes.html">Salads and side dishes</a>
+            <a href="../Project1/Desserts.html">Desserts</a>
+            <a href="../Project1/Drinks.html">Drinks</a>
+            <a href="../Project1/Contact.html">Contact</a>
+        </div>
+        
+    </div>
+    
+    <div class="main">
+    <img src="clipartwiki.com-twig-clipart-775098.png">    
+    <div id="overlay">
+        <h1>Strawberry&amp;Banana Milkshake</h1>
+        <img id="milkshake" src="milkshake.jpg">
+        <p>This is one of those things that you make in 5 minutes. It takes almost 0 effort, and when you feel lazy but still want something fine to treat yourself, or some uninvited guests show up at your door and you have no time to make desserts, then this is the right thing for you.</p>
+        
+        <h2><b>Time to prepare:</b> 5 minutes</h2>
+        
+        <h2><b>Ingredients:</b></h2>
+        
+        <ul>
+            <li>400 grams of strawberries</li>
+            <li>1 banana</li>
+            <li>3 cups (around 600 mililiters) of milk</li>
+            <li>sugar per taste</li>
+        </ul>
+        
+        <h2><b>Preparing:</b></h2>
+        
+        <p>Wash up your strawberries, cut them in halves and put them in blender. Cut your banana into few pieces, and add it to the blender as well. Pour the milk, and add some sugar, if you want it to be sweeter. I like it natural, so I usually don't add sugar. ALso, you may add some other ingredients, such as honey, or fresh mint leaves, or maybe some dried fruits, while I like it classic. Turn the blender on, waiit a few moments, and voila!</p>
+        <p>Pour the milkshake in the glass, add few cubes of ice, and that is it! You</p>
+        <p>Sometimes, when I have some extra time, I decorate the glass where I will pour the milkshake. I spread the chocolate ganache over all across the glass, and stick some ground biscuits to it. You may do like that, or any other way you like, be creative!</p>
+        
+        
+        <h2><b>Enjoy!</b></h2>
+    </div>
+    
+    </div>
+    
+    <script type="text/javascript">
+        
+            function openNav() {
+                
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementsByClassName("menubar").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementsByClassName("menubar").style.marginLeft= "0";
+            }
+</script>
+    
+    
+    
+</body>

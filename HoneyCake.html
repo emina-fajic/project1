@@ -1,0 +1,493 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+      
+    <title>Minse's Little Kitchen World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gochi+Hand|Great+Vibes|Homemade+Apple|Indie+Flower|Marck+Script|Merienda|Miss+Fajardose|Pacifico|Parisienne|Shadows+Into+Light|Indie+Flower&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+        body {
+                
+                margin-top: -4%;
+                margin-left: 0px;
+                margin-right: 0px;
+                
+        }
+    
+        .header{
+            
+                width: 100%;
+                height: 300px;
+                background-color: bisque;
+
+        }
+        
+        
+        #title {
+            
+                color: red;
+                width: 30%;
+                height: 300px;
+                background-color: bisque;
+                position: absolute;
+                left: 40%;
+                
+        }
+        
+        #title h1 {
+            
+                font-family: 'Parisienne', cursive;
+                color: darkseagreen;
+                padding: 5px 5px 5px 5px;
+                font-size: 80px;
+                
+        }
+        
+        #title h2 {
+            
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 40px;
+                color:chocolate;
+                width: 100%;
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                
+        }
+        
+        
+        #pizza {
+            
+                    width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    top: 75px;
+                    left: 26%;
+        }
+        
+        #cookies {
+            
+                    position: absolute;
+                    top: 15px;
+                    left: 13.5%;
+        }
+        
+        #plate {
+            
+                    position: absolute;
+                    left: 35%;
+                    top: 145px;
+                    z-index: 1;
+                        
+        }
+        
+        #cake {
+            
+                    position: absolute;
+                    left: 69%;
+                    top: 10px;
+        }
+        
+        #cupcake {
+            
+                    position: absolute; 
+                    left: 84%;
+                    top: -10px;
+        }
+        
+        #drink {
+            
+                    width: 180px;
+                    height: 250px;
+                    position: absolute;
+                    top: -4px;
+                    left: 0.6%;
+        }
+        
+        #insta  {
+            
+                    position: absolute;
+                    top: 240px;
+                    left: 51%;
+        }
+        
+        #fb {
+            
+                    position: absolute;
+                    top: 232px;
+                    left: 66%;
+        }
+        
+        #pinterest {
+            
+                    position: absolute;
+                    top: 233px;
+                    left: 83%;
+        }
+        
+        #weheartit {
+            
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 240px;
+                    left: 100%;
+        }
+        
+        .menubar {
+            
+                    width: 100%;
+                    height: 115px;
+                    background-color: gainsboro;
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 245px;
+                    font-family: 'Shadows Into Light', cursive;
+        }
+        
+        #sidebar {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0px;
+                    left: 0px;
+                    background-color:bisque;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 75px;
+                    opacity: 1;
+                    
+        }
+        
+        #sidebar a {
+            
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:cadetblue;
+                    display: block;
+                    transition: 0.3s;
+                    border-bottom: 1px solid white;
+        }
+        
+        
+        #sidebar a:hover {
+            
+                    color:darkred;
+        
+        }
+        
+        
+        
+        #sidebar .closebtn {
+            
+                    position: absolute;
+                    top: 0px;
+                    right: 25px;
+                    font-size: 25px;
+                    margin-left: 50px;
+                    border-bottom: 0px;
+                    
+        }
+        
+        
+        .openbtn {
+            
+                    font-size: 15px;
+                    cursor: pointer;
+                    background-color: #111;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    position: absolute;
+                    top: 42px;
+                    left: 30px;
+            
+        }
+        
+        
+        .openbtn:hover {
+            
+                    background-color: #444;
+        }
+        
+        #today {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 25px;
+                            left: 55%;
+                            font-size: 24px;
+                            padding: 15px 15px 15px 15px;
+                            border-right: 1px solid white;
+                            
+        }
+        
+        #lazy {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 25px;
+                            left: 68.5%;
+                            font-size: 24px;
+                            padding: 15px 20px 15px 20px;
+                            border-right: 1px solid white;
+        }
+        
+        #guests {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 25px;
+                            left: 84%;
+                            font-size: 24px;
+                            padding: 15px 15px 15px 15px;
+                            border-right:0px;
+        }
+        
+        #today:hover, #lazy:hover, #guests:hover {
+            
+                            color:forestgreen;
+        }
+        
+        .menubar input[type=text] {
+            
+                            padding: 6px;
+                            border: 2px solid darksalmon;
+                            margin-top: 8px;
+                            margin-right: 0px;
+                            font-size: 17px;
+                            width: 250px;
+                            height: 40px;
+        }
+        
+        .menubar .search-container {
+            
+                            position: absolute;
+                            top: 35px;
+                            left: 120px;
+                            
+        }
+        
+        .menubar .search-container button {
+            
+                            float: right;
+                            padding: 6px 10px;
+                            margin-top: 8px;
+                            margin-right: 16px;
+                            font-size: 17px;
+                            cursor: pointer;
+                            height: 40px;
+                            width: 40px;
+                            position: absolute;
+                            top: 0px;
+                            background-color: darkgray;
+                            border:1px solid darksalmon;
+        }
+        
+        * {box-sizing: border-box;}
+        
+        
+        .main {
+            
+                width: 100%;
+                height: 2400px;
+                position: absolute;
+                top: 350px;
+                left: 0px;
+                background-image: url("pink.jpg");
+                background-size: cover;
+        }
+        
+        
+         #overlay {
+            
+                    position: absolute;
+                    left: 8%;
+                    top: 10%;
+                    width: 80%;
+                    height: 80%;
+                    background-color: rgba(225, 225, 225, 0.5);
+                    margin-bottom: 5%;
+                    padding-bottom: 5%;
+        }
+        
+        
+        .main img {
+            
+                    position: absolute;
+                    top: 1%;
+                    left: 54%;
+        }
+        
+        
+        #medena {
+            
+                    width: 420px;
+                    height: 320px;
+                    position: absolute;
+                    top: 27%;
+                    left: 50%;
+                    border: 5px solid cadetblue; 
+                    border-radius: 10px;
+        }
+        
+        .main h1 {
+            
+                    font-family:'Shadows Into Light', cursive;
+                    font-size: 45px;
+                    font-weight: bold;
+                    color: cadetblue;
+                    text-align:left;
+                    align-content: center;
+                    margin: 20px 5px 5px 20px;
+                    padding: 20px 5px 5px 20px;
+        }
+        
+        .main h2 {
+            
+                    font-family:'Shadows Into Light', cursive;
+                    font-size: 26px;
+                    font-weight: bold;
+                    color: cadetblue;
+                    text-align:left;
+                    align-content: center;
+                    margin: 20px 5px 5px 20px;
+                    padding: 20px 5px 5px 20px;
+        }
+        
+        
+        .main p {
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 20px 10px 10px 20px;
+                    padding: 20px 10px 10px 20px;
+                    color: black;
+        }
+        
+        
+        .main ul {
+            
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 20px 10px 10px 20px;
+                    padding: 20px 10px 10px 20px;
+                    color: black;
+        }
+
+        
+        
+          </style>
+    
+    
+</head>
+    
+<body>
+    <div class="header">
+        
+            <div id="title">
+                <h1>Minse's</h1>
+                <h2>Little Kitchen World</h2>
+                <a href="https://www.instagram.com/spirit.indestructible/?hl=hr" target="_blank"><img id="insta" src="instagram.png"></a>
+                <a href="https://www.facebook.com/eminafajits" target="_blank"><img id="fb" src="kissclipart-%E0%B9%80%E0%B8%9F%E0%B8%AA-png-clipart-facebook-computer-icons-desk-b50693e5d095b36b.png"></a>
+                <a href="https://www.pinterest.com/eminafaji/" target="_blank"><img id="pinterest" src="%E2%80%94Pngtree%E2%80%94pinterest%20logo%20icon_3570312.png"></a>
+                <a href="https://weheartit.com/spirit_indestructible" target="_blank"><img id="weheartit" src="we-heart-it-pngrepo-com.png"></a>
+            </div>
+        <img id="drink" src="drinks-drawing-transparent-transparent.png">
+        <img id="pizza" src="food-clipart-pizza-5.png">
+        <img id="cookies" src="clipartwiki.com-christmas-cookies-clipart-39731.png">
+        <img id="plate" src="western-food-cartoon-png-chicken-salad-clipart-a6d28ec47ad04378.png">
+        <img id="cake" src="cake-clipart-transparent-4.png">
+        <img id="cake" src="cake-clipart-transparent-4.png">
+        <img id="cupcake" src="kisspng-cupcake-cakes-clip-art-portable-network-graphics-vector-cupcakes-dessert-transparent-amp-png-clip-5cb738292ec6f1.4542767115555113371916.png">
+        
+        <div class="menubar">
+                
+                <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="search-container">
+                <input type="text" placeholder="Search ..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+                <a id="today" href="">On Today's Menu</a>
+                <a id="lazy" href="">Hungry but Lazy</a>
+                <a id="guests" href="">Guests are coming</a>
+    
+        </div>
+        
+        <div id="sidebar" class="menubar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <a href="../Project1/About.html">About</a>
+            <a href="../Project1/Soups.html">Soups</a>
+            <a href="../Project1/Pies%20and%20Pastries.html">Pies and Pastries</a>
+            <a href="../Project1/SaladsAndSideDishes.html">Salads and side dishes</a>
+            <a href="../Project1/Desserts.html">Desserts</a>
+            <a href="../Project1/Drinks.html">Drinks</a>
+            <a href="../Project1/Contact.html">Contact</a>
+        </div>
+        
+    </div>
+    
+    <div class="main">
+    <img src="clipartwiki.com-twig-clipart-775098.png">    
+    <div id="overlay">
+        <h1>Honey Cake</h1>
+        <img id="medena" src="medena.JPG">
+        <p>Let me just start by saying that this is not the easiest cake to make, but TRUST ME, it's definitely worth it! If you make this cake and try it in its best (homemade) version, you will get addicted, and you will keep coming back to this cake. Even if sometimes you get sick of it, because this cakes wants some effort, someone else from your friends or family will ask it from you, because it's just the best cake ever. Don't lose your hopes, it's not that difficult, you can do it!</p>
+        
+        <h2><b>Time to prepare:</b> 3 hours</h2>
+        
+        <h2><b>Ingredients:</b></h2>
+        
+        <ul><b>For The Biscuit:</b>
+            <li>3 eggs</li>
+            <li>3 tbsps of honey</li>
+            <li>125 grams of butter</li>
+            <li>200 grams of sugar</li>
+            <li>1 package (10 grams) of vanilla sugar</li>
+            <li>2 tsps of baking soda</li>
+            <li>500 grams of flour</li>
+            <b>For the Cream:</b>
+            <li></li>
+            <li>800 grams of "mileram" sour cream</li>
+            <li>400 grams of sugar</li>
+            <li>3 packages (30 grams) of vanilla sugar</li>
+            <li>250 grams of mascarpone cheese</li>
+        </ul>
+        
+        <h2><b>Preparing:</b></h2>
+        
+        <p>Ok, so the hardest part of this cake is to make the biscuit, the rest is easy-peasy-lemon-squeezy. Start by seperating the eggwhites from yolks. First, whip your eggwhites until you obtain a firm mixture, and then add the yolks, one by one, to teh mixture, and don't dare to stop whipping it, because it will convert to water if you do. Then, slowly add your sugar, spoon by spoon, and again, don't stop whipping it. When the mixture is nicely whipped, take a big saucepan and pour some water into it, and than put your saucepan with your cream inside of that pan with water, but don't let the water touch the saucepan where your cream is. Cook the cream like that, on "steam", for 20-25 minutes. While cooking it like that, add the honey, and gently mix the mixture, because it will water-out if you get too rough with it. Also, slowly add the baking soda and the flour, and again, gently mix it all until it becomes homogeneous, dough-like mixture. Put the dough in the fridge, and leave it for about an hour, in order to set nicely.  </p>
+        <p>After the dough is set nicely, divide your dough into pieces. I like my buiscuits thin, so I divide my dough into 10-12 pieces, but if you want a thicker biscuit, divide it up until 6-7 pieces, do as you wish and as you like it. ALso, less pieces, less bicuits to make, so it will take less time and energy. Make a little ball from each of the divided piece of dough. Put one ball of dough on the baking tray, but don't forget to put the baking paper, it's extremely important. Roll you dough out, and if you want all the biscuits to be the same, you may cut the leftovers, but I like it rustic, so I just roll my dough in a circle-like form, and put it into the oven. Bake the biscuit on 170 degrees Celsius for around 3-4 minutes, not longer, because this biscuit is extremely delicate and easy to burn. Repeat the procedure for the rest of dough balls. When you have baked all of your biscuits, leave them to cool off nicely.</p>
+        <p>Now, when all the hard job is done, what's left is to make the cream. Mix the sour cream, mascarpone cheese, sugar and vanilla sugar, until you get a nice smooth cream. Try it on, if you think it's not sweet enough, add some more sugar. This is the plain version of the cream that is usually used for this cake, and that is, personally, my favourite, but if you wish, you may add some lemon or orange zest, lemon or orange juice, or anything else that comes up to your mind. Take your cooled biscuits, and stack them, biscuit, cream, biscuit, cream, and so on .. until you run out the biscuits and the cream. Decorate with some powdered sugar.</p>
+        
+        
+        <h2><b>Bon Appetit!</b></h2>
+    </div>
+    
+    </div>
+    
+    <script type="text/javascript">
+        
+            function openNav() {
+                
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementsByClassName("menubar").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementsByClassName("menubar").style.marginLeft= "0";
+            }
+</script>
+    
+    
+    
+</body>

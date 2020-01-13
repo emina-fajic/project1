@@ -1,0 +1,749 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+      
+    <title>Minse's Little Kitchen World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gochi+Hand|Great+Vibes|Homemade+Apple|Indie+Flower|Marck+Script|Merienda|Miss+Fajardose|Pacifico|Parisienne|Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+        body {
+                
+                margin-top: -4%;
+                margin-left: 0px;
+                margin-right: 0px;
+                
+        }
+    
+        .header {
+            
+                width: 100%;
+                height: 300px;
+                background-color: bisque;
+
+        }
+        
+        
+        #title {
+            
+                color: red;
+                width: 30%;
+                height: 300px;
+                background-color: bisque;
+                position: absolute;
+                left: 40%;
+                
+        }
+        
+        #title h1 {
+            
+                font-family: 'Parisienne', cursive;
+                color: darkseagreen;
+                padding: 5px 5px 5px 5px;
+                font-size: 80px;
+                
+        }
+        
+        #title h2 {
+            
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 40px;
+                color:chocolate;
+                width: 100%;
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                
+        }
+        
+        
+        #pizza {
+            
+                    width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    top: 75px;
+                    left: 26%;
+        }
+        
+        #cookies {
+            
+                    position: absolute;
+                    top: 15px;
+                    left: 13.5%;
+        }
+        
+        #plate {
+            
+                    position: absolute;
+                    left: 35%;
+                    top: 145px;
+                    z-index: 1;
+                        
+        }
+        
+        #cake {
+            
+                    position: absolute;
+                    left: 69%;
+                    top: 10px;
+        }
+        
+        #cupcake {
+            
+                    position: absolute; 
+                    left: 84%;
+                    top: -10px;
+        }
+        
+        #drink {
+            
+                    width: 180px;
+                    height: 250px;
+                    position: absolute;
+                    top: -4px;
+                    left: 0.6%;
+        }
+        
+        #insta  {
+            
+                    position: absolute;
+                    top: 240px;
+                    left: 51%;
+        }
+        
+        #fb {
+            
+                    position: absolute;
+                    top: 232px;
+                    left: 66%;
+        }
+        
+        #pinterest {
+            
+                    position: absolute;
+                    top: 233px;
+                    left: 83%;
+        }
+        
+        #weheartit {
+            
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 240px;
+                    left: 100%;
+        }
+        
+        .menubar {
+            
+                    width: 100%;
+                    height: 115px;
+                    background-color: gainsboro;
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 245px;
+                    font-family: 'Shadows Into Light', cursive;
+        }
+        
+        #sidebar {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0px;
+                    left: 0px;
+                    background-color:bisque;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 75px;
+                    opacity: 1;
+                    
+        }
+        
+        #sidebar a {
+            
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:cadetblue;
+                    display: block;
+                    transition: 0.3s;
+                    border-bottom: 1px solid white;
+        }
+        
+        
+        #sidebar a:hover {
+            
+                    color:darkred;
+        }
+        
+        
+        
+        #sidebar .closebtn {
+            
+                    position: absolute;
+                    top: 0px;
+                    right: 25px;
+                    font-size: 25px;
+                    margin-left: 50px;
+                    border-bottom: 0px;
+                    
+        }
+        
+        
+        .openbtn {
+            
+                    font-size: 15px;
+                    cursor: pointer;
+                    background-color: #111;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    position: absolute;
+                    top: 45px;
+                    left: 30px;
+            
+        }
+        
+        
+        .openbtn:hover {
+            
+                    background-color: #444;
+        }
+        
+        #today {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 20px;
+                            left: 55%;
+                            font-size: 24px;
+                            padding: 15px 15px 15px 15px;
+                            border-right: 1px solid white;
+                            
+        }
+        
+        #lazy {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 20px;
+                            left: 68.5%;
+                            font-size: 24px;
+                            padding: 15px 20px 15px 20px;
+                            border-right: 1px solid white;
+        }
+        
+        #guests {
+            
+                            text-decoration: none;
+                            position: absolute;
+                            top: 20px;
+                            left: 84%;
+                            font-size: 24px;
+                            padding: 15px 15px 15px 15px;
+                            border-right:0px;
+        }
+        
+        #today:hover, #lazy:hover, #guests:hover {
+            
+                            color:forestgreen;
+        }
+        
+        .menubar input[type=text] {
+            
+                            padding: 6px;
+                            border: 2px solid darksalmon;
+                            margin-top: 8px;
+                            margin-right: 0px;
+                            font-size: 17px;
+                            width: 250px;
+                            height: 39px;
+        }
+        
+        .menubar .search-container {
+            
+                            position: absolute;
+                            top: 38px;
+                            left: 120px;
+                            
+        }
+        
+        .menubar .search-container button {
+            
+                            float: right;
+                            padding: 6px 10px;
+                            margin-top: 8px;
+                            margin-right: 16px;
+                            font-size: 17px;
+                            cursor: pointer;
+                            height: 40px;
+                            width: 40px;
+                            position: absolute;
+                            top: 0px;
+                            background-color: darkgray;
+                            border:1px solid darksalmon;
+        }
+        
+        .main {
+            
+                width: 100%;
+                height: 1500px;
+                position: absolute;
+                top: 350px;
+                left: 0px;
+                background-image: url("babyblue.jpg");
+                background-size: cover;
+        }
+        
+        * {box-sizing: border-box;}
+    
+
+        .slideshow-container {
+            
+                max-width: 1000px;
+                position: relative;
+                top: 8%;
+                left: 0%;
+                margin: auto;
+        }
+        
+
+        .mySlides {
+            
+                display: none;
+            
+        }
+
+
+        .text {
+            
+                color:coral;
+                font-size: 22px;
+                font-family: 'Shadows Into Light', cursive;
+                font-weight: bold;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align:justify;
+        }
+
+
+        .numbertext {
+            
+                color: #f2f2f2;
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 16px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+        }
+
+        
+
+        .fade {
+            
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 5s;
+                animation-name: fade;
+                animation-duration: 2s;
+            
+        }
+        
+
+        @-webkit-keyframes fade {
+            
+                from {opacity: .4}
+                to {opacity: 1}
+        }
+
+        @keyframes fade {
+            
+                from {opacity: .4}
+                to {opacity: 1}
+        }
+        
+        
+        .main h2 {
+            
+                    font-family:'Shadows Into Light', cursive;
+                    font-size: 26px;
+                    font-weight: bold;
+                    color: cadetblue;
+                    text-align:left;
+                    align-content: center;
+                    margin: 5px 5px 5px 20px;
+                    padding: 5px 5px 5px 20px;
+            
+        }
+        
+        .main p1, .main p2, .main p3 {
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 20px 10px 10px 20px;
+                    padding: 20px 10px 10px 20px;
+                    color: darksalmon;
+                    margin: 5px 10px 5px 10px;
+                    padding: 5px 10px 5px 10px;
+        }
+        
+        
+        .intro {
+            
+                    position: absolute;
+                    top: 5%;
+                    text-align: justify;
+                    max-width: 500px;
+                    left: 55%;
+        }
+        
+        #kontejner {
+            
+                    width: 570px;
+                    height: 350px;
+                    background-color: bisque;
+                    opacity: 0.5;
+                    position: absolute;
+                    top: 45px;
+                    padding: 5px 7px 5px 7px;
+        }
+        
+        
+        #photo {
+            
+                    position: absolute;
+                    top: 0%;
+                    left: 65%;
+                    width: 300px;
+                    height: 300px;
+                    
+        }
+        
+        #photo2 {
+            
+                    position: absolute;
+                    top: 0%;
+                    left: 65%;
+                    width: 200px;
+                    height: 350px;
+                    
+        }
+        
+        .kontejner2 {
+    
+                        position: absolute;
+                        top: 53%;
+                        left: 0px;
+                        width: 100%;
+                    
+            }
+
+            .kontejner2:hover #photo {
+                
+                        opacity: 0.3;
+            }
+
+
+            .kontejner2:hover .middle {
+                
+                        opacity: 1;
+            }
+        
+        
+            .kontejner3 {
+    
+                        position: absolute;
+                        top: 50%;
+                        left: -45%;
+                        width: 100%;
+                    
+            }
+
+            .kontejner3:hover #photo2 {
+                
+                        opacity: 0.3;
+            }
+
+
+            .kontejner3:hover .middle {
+                
+                        opacity: 1;
+            }
+
+
+            .text2 {
+                
+                    background-color:darkseagreen;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    padding: 14px 24px;
+            }
+
+            .middle {
+                
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 75px;
+                    left: 1130px;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+            }
+        
+        
+    </style>
+    
+    
+</head>
+    
+<body>
+    <div class="header">
+        
+            <div id="title">
+                <h1>Minse's</h1>
+                <h2>Little Kitchen World</h2>
+                <a href="https://www.instagram.com/spirit.indestructible/?hl=hr" target="_blank"><img id="insta" src="instagram.png"></a>
+                <a href="https://www.facebook.com/eminafajits" target="_blank"><img id="fb" src="kissclipart-%E0%B9%80%E0%B8%9F%E0%B8%AA-png-clipart-facebook-computer-icons-desk-b50693e5d095b36b.png"></a>
+                <a href="https://www.pinterest.com/eminafaji/" target="_blank"><img id="pinterest" src="%E2%80%94Pngtree%E2%80%94pinterest%20logo%20icon_3570312.png"></a>
+                <a href="https://weheartit.com/spirit_indestructible" target="_blank"><img id="weheartit" src="we-heart-it-pngrepo-com.png"></a>
+            </div>
+        <img id="drink" src="drinks-drawing-transparent-transparent.png">
+        <img id="pizza" src="food-clipart-pizza-5.png">
+        <img id="cookies" src="clipartwiki.com-christmas-cookies-clipart-39731.png">
+        <img id="plate" src="western-food-cartoon-png-chicken-salad-clipart-a6d28ec47ad04378.png">
+        <img id="cake" src="cake-clipart-transparent-4.png">
+        <img id="cake" src="cake-clipart-transparent-4.png">
+        <img id="cupcake" src="kisspng-cupcake-cakes-clip-art-portable-network-graphics-vector-cupcakes-dessert-transparent-amp-png-clip-5cb738292ec6f1.4542767115555113371916.png">
+        
+        <div class="menubar">
+                
+                <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="search-container">
+                <input type="text" placeholder="Search ..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+                <a id="today" href="">On Today's Menu</a>
+                <a id="lazy" href="">Hungry but Lazy</a>
+                <a id="guests" href="">Guests are coming</a>
+    
+        </div>
+        
+        <div id="sidebar" class="menubar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <a href="../Project1/About.html">About</a>
+            <a href="../Project1/Soups.html">Soups</a>
+            <a href="../Project1/Pies%20and%20Pastries.html">Pies and Pastries</a>
+            <a href="../Project1/SaladsAndSideDishes.html">Salads and side dishes</a>
+            <a href="../Project1/Desserts.html">Desserts</a>
+            <a href="../Project1/Drinks.html">Drinks</a>
+            <a href="../Project1/Contact.html">Contact</a>
+        </div>
+    </div>
+    
+        <div class="main">
+    
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                
+                <div class="numbertext">1 / 10</div>
+                    <img src="chickensalad.JPG" style="width:50%">
+                <div class="text">Chicken Pasta Salad</div>
+                
+            </div>
+
+            <div class="mySlides fade">
+                
+                <div class="numbertext">2 / 10</div>
+                    <img src="grapejuice.JPG" style="width:50%">
+                <div class="text">Homemade Grape Juice</div>
+            </div>
+                
+
+            <div class="mySlides fade">
+                
+                <div class="numbertext">3 / 10</div>
+                    <img src="medena.jpg" style="width:50%">
+                <div class="text">Honey Cake</div>
+            </div>
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">4 / 10</div>
+                    <img src="muffins.jpg" style="width: 50%">
+                <div class="text">Cloud Muffins</div>
+                
+            </div>
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">5 / 10</div>
+                    <img src="mushroom.JPG" style="width: 50%">
+                <div class="text">Mushroom Cream Soup</div>
+                
+            </div>
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">6 / 10</div>
+                    <img src="potatoes.JPG" style="width: 50%">
+                <div class="text">Bakery Potatoes</div>
+                
+            </div>
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">7 / 10</div>
+                    <img src="tufahije.jpg" style="width: 50%">
+                <div class="text">Candied Apples</div>
+                
+            </div>
+                
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">8 / 10</div>
+                    <img src="mercimek.jpg" style="width: 50%">
+                <div class="text">Mercimek Soup</div>
+                
+            </div>
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">9 / 10</div>
+                    <img src="strawberryjuice.png" style="width: 50%">
+                <div class="text">Homemade Strawberry Juice</div>
+                
+            </div>
+                
+                
+            <div class="mySlides fade">
+                
+                <div class="numbertext">10 / 10</div>
+                    <img src="sirnica.JPG" style="width: 50%">
+                <div class="text">Sirnica/Cheese Pie</div>
+                
+            </div>
+                
+                
+            </div>
+            
+            <div class="intro">
+                <div id="kontejner">
+                    <h2>Welcome to my little kitchen world!</h2>
+                    <p1>I am extremely happy that I am able to share my love and passion for cooking with you, and I am also happy to share my recipes with you.</p1>
+                    <br><p2>If there's something that you especially like or don't like, or you want to ask me a question, go to the "Contact" page on the sidebar, and write me your opinions. I'm looking forward to any kind of feedback from you.</p2>
+                    <br>
+                    <p3>Thank You for Your support from the depths of my heart and soul!</p3>
+                </div>
+            </div>
+<br>
+            <div class="kontejner2">
+            
+                <audio id="sound">
+                    <source src="Billie%20Eilish%20-%20Bellyache.mp3">
+                </audio>
+                <img id="photo" src="cake-clipart-transparent-4.png">
+                <div class="middle">
+                <div class="text2">Click on photo to play some music, and double click to pause it!</div>
+                </div>
+            </div>
+            
+            <div class="kontejner3">
+            
+                <audio id="sound2">
+                    <source src="Goo%20Goo%20Dolls%20-%20Iris%20%5BOfficial%20Music%20Video%5D.mp3">
+                </audio>
+                <img id="photo2" src="drinks-drawing-transparent-transparent.png">
+                <div class="middle">
+                <div class="text2">Click on photo to play some music, and double click to pause it!</div>
+                </div>
+            </div>
+                
+            </div>
+    
+    <script type="text/javascript">
+        
+        
+        
+        
+            function openNav() {
+                
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementsByClassName("menubar").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementsByClassName("menubar").style.marginLeft= "0";
+            }
+        
+        
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+            }
+                
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); 
+            }
+        
+        
+            const mySound=document.getElementById("sound");
+            const myPhoto=document.getElementById("photo");
+            myPhoto.addEventListener('click', function() {
+                
+                    mySound.play();
+
+            });
+            
+            myPhoto.addEventListener('dblclick', function() {
+                
+                    mySound.pause();
+            });
+        
+        
+        
+            const mySound2=document.getElementById("sound2");
+            const myPhoto2=document.getElementById("photo2");
+            myPhoto2.addEventListener('click', function() {
+                
+                    mySound2.play();
+
+            });
+            
+            myPhoto2.addEventListener('dblclick', function() {
+                
+                    mySound2.pause();
+            });
+        
+            
+            
+        
+</script>
+    
+    
+    
+</body>
